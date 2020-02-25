@@ -1,9 +1,8 @@
-'use strict';
+'use strict'
 
 function isCurrentTabNamebase (callback) {
   chrome.tabs.getSelected(null, function(tab) {
-    const tabUrl = tab.urltradeStream
-    if (tabUrl && tabUrl.toLowerCase().indexOf('https://www.namebase.io/') >= 0) {
+    if (tab.url.toLowerCase().indexOf('https://www.namebase.io/') >= 0) {
       callback(true)
     } else {
       callback(false)
