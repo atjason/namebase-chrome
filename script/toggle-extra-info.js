@@ -27,7 +27,7 @@ function toggleExtraInfo() {
     const orderBook = document.getElementsByTagName('body')[0].firstElementChild.firstElementChild.childNodes[2]
 
     orderBook.style.position    = s ? 'absolute' : 'relative'
-    orderBook.style.height      = s ? '50vh' : '100%'
+    orderBook.style.height      = s ? '60vh' : '100%'
     orderBook.style.width       = '288px'
     orderBook.style['z-index']  = s ? 100 : 1
 
@@ -35,9 +35,9 @@ function toggleExtraInfo() {
 
     tradeStream.style.position    = s ? 'absolute' : 'relative'
     tradeStream.style.display     = s ? 'block' : 'none'
-    tradeStream.style.top         = s ? '50vh' : 0
+    tradeStream.style.top         = s ? '60vh' : 0
     tradeStream.style.width       = '288px'
-    tradeStream.style.height      = s ? '50vh' : '100%'
+    tradeStream.style.height      = s ? '40vh' : '100%'
     tradeStream.style['z-index']  = s ? 100 : 1
 
   } catch(e) {
