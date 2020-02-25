@@ -1,0 +1,27 @@
+{
+  "name": "Namebase Clearer",
+  "version": "0.1",
+  "background": {
+    "page": "./script/background.html"
+  },
+  "permissions": [
+    "tabs",
+    "cookies",
+    "https://www.namebase.io/*"
+  ],
+  "browser_action": {
+    "default_icon": "icon/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.namebase.io/*"
+      ],
+      "js": [
+        "./script/toggle-extra-info.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "manifest_version": 2
+}
